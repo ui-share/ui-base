@@ -1,0 +1,95 @@
+/* global */
+html,
+body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+.page-wrapper {
+	height: 100%;
+}
+
+/* container */
+.container {
+	height: calc(100% - 60px - 48px);
+	padding: 1em 1em 2em 1em;
+	overflow-y: auto;
+}
+
+/* flex-box */
+.row {
+	display: flex;
+	flex-direction: row !important;
+	gap: 1em;
+	> * {
+		flex: 1;
+	}
+}
+.column {
+	display: flex;
+	flex-direction: column !important;
+	gap: 1em;
+}
+
+// element 기본속성
+/* button */
+button,
+[type='button'],
+[type='submit'],
+[type='reset'],
+[role='button'] {
+	user-select: none;
+	font: inherit;
+	color: inherit;
+	white-space: nowrap;
+	background: none;
+	text-decoration: none;
+}
+/* input */
+input {
+	--input-text-color: var(--text-default);
+	--input-bg-color: var(--color-bg);
+	--input-border-color: var(--color-border-light);
+
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	line-height: 1.4;
+	color: var(--input-text-color);
+	background-color: var(--input-bg-color);
+	border-bottom: 2px solid var(--input-border-color);
+	caret-color: var(--color-primary);
+    padding: 10px 0;
+	
+	&::placeholder {
+		color: var(--text-disabled);
+	}
+	&:focus {
+		border-color: var(--color-primary);
+	}
+	&:disabled {
+		color: var(--text-disabled);
+		cursor: default;
+	}
+	&.readonly {
+		color: var(--text-disabled);
+		cursor: default;
+	}
+}
+
+/* checkbox */
+.checkbox__input {
+  // 기본 스타일 제거
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  // 크기 초기화
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+
+  // accent-color 제거 (안 하면 기본 체크 표시 생김)
+  accent-color: transparent;
+} 

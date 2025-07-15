@@ -1,0 +1,21 @@
+<svg width="265" height="265" viewBox="0 0 265 265" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_418_4459" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="265" height="265">
+<rect width="265" height="265" fill="#BBBBBB"/>
+</mask>
+<g mask="url(#mask0_418_4459)">
+<path d="M127.065 136.067L96.868 151.166L56.6049 120.969L46.5391 176.331L81.7693 206.528L86.8022 251.824" stroke="#444444" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M127.062 120.969V136.067V251.824" stroke="#444444" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.5378 206.543L26.4062 251.839" stroke="#444444" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.4379 120.969C16.3392 131.035 6.27344 156.199 6.27344 156.199L26.405 166.265" stroke="#444444" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M66.6706 100.837C77.7893 100.837 86.8022 91.8242 86.8022 80.7058C86.8022 69.5874 77.7893 60.5742 66.6706 60.5742C55.552 60.5742 46.5391 69.5874 46.5391 80.7058C46.5391 91.8242 55.552 100.837 66.6706 100.837Z" stroke="#444444" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="127.5" y="10.5" width="128" height="170.632" rx="8.80005" fill="white" stroke="#4A4849" stroke-width="7"/>
+<path d="M256.082 145.641L256.082 252.22" stroke="#4A4849" stroke-width="7" stroke-linecap="round"/>
+<line x1="124" y1="138.5" x2="259" y2="138.5" stroke="#4A4849" stroke-width="7"/>
+<rect x="148.922" y="31.9219" width="85.1579" height="85.1579" rx="9.5" fill="#3DBDFF" stroke="#4A4849" stroke-width="7"/>
+<line x1="148.871" y1="159.816" x2="234.134" y2="159.816" stroke="#4A4849" stroke-width="7"/>
+<mask id="path-12-inside-1_418_4459" fill="white">
+<path d="M159.527 158.348H223.475V204.084C223.475 206.294 221.684 208.084 219.475 208.084H163.527C161.318 208.084 159.527 206.294 159.527 204.084V158.348Z"/>
+</mask>
+<path d="M159.527 158.348H223.475V204.084C223.475 206.294 221.684 208.084 219.475 208.084H163.527C161.318 208.084 159.527 206.294 159.527 204.084V158.348Z" fill="white" stroke="#4A4849" stroke-width="14" mask="url(#path-12-inside-1_418_4459)"/>
+</g>
+</svg>

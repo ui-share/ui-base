@@ -1,0 +1,88 @@
+/*======================================*/
+/* footer - 공통기능, 플로팅 */
+.footer {
+	height: auto;
+	background-color: var(--white);
+    border-top: 1px solid var(--color-border-lighter);
+
+	.button > .label,
+	.button > .custom_text,
+	.button > .text-special {
+		font-size: 0.813em;
+		line-height: 105%;
+		font-weight: 400;
+		color: var(--dwp-body-color);
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+.footerNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+
+	> li {
+		flex: 1;
+		display: block;
+		min-width: 1.625em;
+
+		.button  {
+			--dx-icon: url(../images/ic_chat_counsel01_n.svg);
+			font-size: 1em;	
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 0.2em;
+			padding: 0.25rem 0.65rem;
+		}
+	}
+	.button.disabled,
+	.button:disabled {
+		opacity: 0.75;
+	}
+	/* 푸터 이미지 */
+	.button::before {
+		flex-shrink: 0;
+		display: inline-block;
+		content: '';
+		width: 1.25em;
+		height: 1.25em;
+		background-image: var(--dx-icon);
+		background-repeat: no-repeat;
+		background-position: 0;
+		background-size: 100%;
+	}
+	.home::before {/* 처음으로 */
+		--dx-icon: url(../images/ic_home_n.svg);	
+	}				
+	.back::before {/* 이전 */
+		--dx-icon: url(../images/ic_back_n.svg);
+	}		
+	.repeat::before {/* 다시 듣기 */
+		--dx-icon: url(../images/ic_refresh_n.svg);
+	}			
+	.counselor::before {/* 상담사 연결 */
+		--dx-icon: url(../images/ic_counsel_n.svg);
+	}		
+	.end::before {/* 종료 */
+		--dx-icon: url(../images/ic_end_n.svg);
+	}				
+	.viewLarge::before {/* 크게 보기 */
+		--dx-icon: url(../images/ic_viewLarge_n.svg);
+	}				
+	.viewSmall::before {/* 작게 보기 */
+		--dx-icon: url(../images/ic_viewSmall_n.svg);
+	}
+	/* 수어상담 *//* 채팅상담 */
+	/* .viewSmall::before {
+		--dx-icon: url(../images/ic_viewSmall_n.svg);
+	}
+	.viewSmall::before {
+		--dx-icon: url(../images/ic_viewSmall_n.svg);
+	} */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" class="view_state"><!-- view__small view__large -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Set the viewport. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+	<link rel="shortcut icon" href="resources/images/favicon.ico">
+	<title>서울특별시 120 다산콜재단 보이는 ARS</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<link rel="stylesheet" type="text/css" media="all" href="https://www.seoul.go.kr/seoulgnb/seoul-common-gnb.css?ver1">
+
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="resources/css/libs/swiper-10.2.0.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/doFont218.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/style3.css">
+	<!-- Scripts -->
+	<script src="resources/js/libs/jquery-3.6.0.min.js"></script>
+	<script src="resources/js/libs/swiper-10.2.0.min.js"></script>
+	<script src="resources/js/common.js"></script>
+</head>
+<body class="landing area">
+
+<div class="ivr dwp_root page-wrapper">
+
+	<!-- container -->
+	<div class="container clear">
+		<div class="contents no_all align_middle unit_page error_page error">
+
+			<div class="content clear">
+				<section class="section row">
+					<div class="imgBox">                        
+						<p class="imageIcon" style="--dx-icon-image: url('../images/ic_standby_error.svg')"><span class="hidden">시스템 장애</span></p>
+					</div>
+					<div class="guide fluidSet">
+						<h3 class="text-special">시스템 장애로 인한<br>오류가 발생하였습니다.</h3>
+						<P class="custom_text">이용에 불편을 드려서 죄송합니다.</P>
+					</div>	
+					<ul class="actions fit button_group fluidSet">
+						<li>
+							<button type="button" class="button fit" th:classappend="${isDirect} == false ? 'submit'" onclick="localCallEnd()">종료</button>
+						</li>
+					</ul>				
+				</section>
+				<!-- <button type="button" class="button btn-primary" th:if="${isMainBtn}" onclick="backToMain()">처음으로 이동</button>-->
+				
+			</div>
+
+		</div>
+	</div>
+	<!-- // container -->
+</div>
+
+</body>
+</html>

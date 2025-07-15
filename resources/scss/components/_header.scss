@@ -1,0 +1,78 @@
+@use '../abstract/index' as *;
+/* 헤더 */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-height: 60px;
+	background-color: var(--white);
+	border-bottom: 1px solid var(--color-border-lighter);
+	padding: 4px 8px;
+	gap: 3px;
+	> * {
+		flex: 0 0 auto; // 기본적으로 확장 안 하도록
+	}
+	.btn {
+		flex: 0 auto;
+		display: inline-block;
+		min-width: 36px;
+		height: 36px;
+		background-repeat: no-repeat;
+		background-size: 28px 28px;
+		background-position: center center;
+		padding: 8px;
+		font-size: 0px;
+		text-indent: -9999px;
+		&.prev {
+			background-image: url(../images/icon/ic-prev_line.svg);
+		}
+		&.end {
+			background-image: url(../images/icon/ic-close_line.svg);
+		}
+		&.search {
+			background-image: url(../images/icon/ic-search.svg);
+		}
+		&.hamburger {
+			background-image: url(../images/icon/ic-hamburger.svg);
+		}
+	}
+}
+.header__content {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 4px;
+ 	flex: 1 1 auto; // 이 부분만 확장 가능하도록!
+	.header-tit {
+		--color-header-tit: var(--text-default);
+		--color-header-txt: var(--text-light);
+
+		flex: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 1px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 19px;
+		color: var(--color-header-tit);
+	}
+	&:not(:has(.btn-util)) .header-tit {
+		padding-left: 12px;
+	}
+	.header-txt {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 19px;
+		color: var(--color-header-txt);
+	}
+}
+.header__controls {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	margin-left: auto;
+}

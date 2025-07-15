@@ -1,0 +1,11 @@
+@use '../abstract/color' as *;
+@use '../abstract/variables' as *;
+
+/*======================================*/
+	/* ROOT */
+/*======================================*/
+:root {
+	@include color;
+	// @include bd-radius;
+	// @include z-index;
+}
