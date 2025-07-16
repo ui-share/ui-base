@@ -1,0 +1,39 @@
+@import "../scss/base/mixin";
+.roamingRealtime {
+    // 로밍요금 라운드박스
+    .roamingPrice {
+        .info-col-wrap {
+            padding-top: 22px;
+            padding-bottom: 22px;
+            .row {
+                align-items: center;
+            }
+            .txt-title {
+                font-size: 16px;
+                align-self: unset;
+            }
+            .txt-price {
+                font-size: 18px;
+                color: var(--dt-black);
+                line-height:130%;
+            }
+            .btn.bg-withdraw {
+                margin-top: 20px;
+            }
+        }
+        .txt-caution { 
+            text-align: right;
+            line-height: 150%;
+            margin-top: 12px;
+        }
+    }
+    .cont__wrap.cont__wrap-vertical {
+        &:has( > .chips-refresh) {
+            gap:8px;
+            .con__tit-box {margin-bottom:8px;}
+            .chips-refresh {// 새로고침버튼
+                align-self: flex-end;
+            }
+        }
+    }
+}

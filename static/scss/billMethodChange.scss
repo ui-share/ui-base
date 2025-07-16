@@ -1,0 +1,52 @@
+@import "../scss/base/mixin";
+
+// 청구서 받는방법 변경 changeBillMethod
+// 주소 검색
+.page-wrapper {
+	&.changeBillMethod {
+		.container {
+			.section__cont {
+				padding: 76px 0 66px;
+			}
+		}
+	}
+}
+.changeBillMethod {
+	.input-col-wrap {
+		row-gap: 8px;
+	}
+}
+
+.addr-wrap {
+	max-height: calc(100vh - 260px);
+	overflow-y: auto;
+	.addr-box {
+		padding: 16px 0 17px;
+		border-bottom: 1px solid var(--dt-gray17);
+		// &[role="button"]:active {
+		// 	box-shadow: inset 0px 0px 0px 100px rgba(0, 0, 0, 0.12);
+		// }
+		.zip-code {
+			@include fw-6(14px);
+			line-height: 17px;
+			color: var(--dt-primary);
+			margin-bottom: 4px;
+		}
+		.addr-main {
+			@include fw-5(14px);
+			line-height: 21px;
+			color: var(--dt-gray16);
+			margin-bottom: 2px;
+		}
+		.addr-detail {
+			@include fw-5(12px);
+			line-height: 18px;
+			color: var(--dt-gray11);
+		}
+		&.card.solid {
+			background-color: transparent;
+			border-bottom: unset;
+			padding: 72px 0;
+		}
+	}    
+}

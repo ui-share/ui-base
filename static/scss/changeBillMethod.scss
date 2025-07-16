@@ -1,0 +1,200 @@
+@import "../scss/base/mixin";
+// 청구서 받는방법 변경 changeBillMethod
+.changeBillMethod {
+	.container {
+		.section__cont {
+			&.segment {
+				padding: 36px 0 48px;
+				gap: 0;
+			}
+			&.desc {//입금전용계좌추가
+				padding: 36px 0 48px 0;
+				&:has(.accnt-cont-wrap){
+					height:calc(100% - 262px);
+				}
+			}
+			&.counsel {		
+				padding: 36px 0 0px;
+			}
+			&:has(.addr-wrap){
+				height:100vh;
+				.cont__wrap-service {
+					height:100%;
+					.cont__txt-box .txt {line-height:150%;}
+				}
+			}
+
+		}
+	}
+}
+
+.changeBillMethod {
+	.cont__wrap {
+		.con__tit-box {
+			.tit-head {
+				flex-wrap:wrap;
+				.txt-title {line-height:22px;}
+				.color-prim {font-size: 18px;font-weight: 700;}
+			}
+			.tit-tail {min-width:max-content;}
+			&:not(:has(.tit-tail)) {
+				&:has(.bullet-list) {
+					flex-direction:column;
+					row-gap:6px;
+				}
+			}
+		}
+		.cont__txt-box {
+			.txt {
+				line-height: 1.5;
+				&.price {
+					@include flexRow;
+					align-items: center;
+					flex-wrap: wrap;
+					@include fw-6(18px);
+					line-height: 1.2;				
+					padding-right: 35%;
+					row-gap: 4px;
+					color: var(--dt-gray16);
+					.deco {
+						@include fw-7(30px);
+						line-height: 1.2;
+						margin-right: 2px;
+					}
+					.deco-sub {
+						@include fw-7(22px);
+						line-height:1.5;
+						margin-right:2px;
+					}
+					.color-prim {
+						@include fw-7(22px);
+						line-height: 1.5;
+					}
+					&:has(.deco),
+					&:has(.color-prim) {
+						color: var(--dt-gray14);
+					}
+					&:has(.deco + .color-prim) {
+						color: var(--dt-gray14);
+						.color-prim {
+							@include fw-6(18px);
+							line-height:1.2;
+						}
+					}
+					.txt-sub {
+						width:100%;
+						font-size:16px;color:var(--dt-black);
+					}
+				}
+			}
+		}
+		&.cont__wrap-vertical {
+			&.wd-full {
+				&:has(.card-group.bank) {
+					height:100%;
+				}
+				row-gap:0;
+				> div {padding-right:20px;padding-left:20px;}
+				.con__tit-box {padding-bottom:16px;}
+				.card-group.bank {margin-bottom:16px;}
+				.accnt-cont-wrap {
+					min-height:120px;
+					overflow-y: auto;
+				}
+			}
+		}
+	}
+
+	.cont__wrap {
+		&.cont__wrap-btBtn {
+			/* 히스토리 확인 후 삭제 예정
+				// pointer-events:auto;
+				// opacity:1;
+				// transition:opacity 0.2s ease-in-out;
+			*/
+			&.is-scrolled {
+				opacity:0;
+				pointer-events:none;
+			}
+			.btn-scroll {margin:0 auto;}
+			.btn-group {
+				position: relative;
+				background-color: var(--dt-white);
+				padding: 0 20px 20px;
+				&::before {
+					content: "";
+					display: inline-block;
+					position: absolute;
+					top: -20px;
+					left: 0;
+					width: 100%;
+					height: 20px;
+					background: linear-gradient(0deg, #FFF 17.5%, rgba(255, 255, 255, 0.00) 100%);
+				}
+				// 풀버튼일 경우 패딩 0
+				&.full { 
+					padding: 0;
+					.btn {
+						border-radius: 0;
+					}
+				}
+			}
+			.btn.bg-bank {
+				width:calc(100% - 40px);
+				margin:0 auto 20px;
+				background-color:var(--dt-gray01);
+				border:1px solid var(--dt-gray08);
+			}
+			&:has(.accordion-container:first-child) { // 버튼 위 아코디언(동의영역) 올라가는 케이스
+				.accordion-container {
+					padding-left:20px;
+					padding-right:20px;
+					padding-bottom:8px;
+				}
+				box-shadow:0px -8px 13px rgba(0, 0, 0, 0.04);
+			}
+		}
+	
+	}
+	
+	// 주소 검색
+	.changeBillMethod {
+		.input-col-wrap {
+			row-gap: 8px;
+		}
+	}
+	
+	.addr-wrap {
+		max-height: calc(100vh - 260px);
+		overflow-y: auto;
+		.addr-box {
+			padding: 16px 0 17px;
+			border-bottom: 1px solid var(--dt-gray17);
+			&[role="button"]:active {
+				box-shadow: inset 0px 0px 0px 100px rgba(0, 0, 0, 0.12);
+			}
+			.zip-code {
+				@include fw-6(14px);
+				line-height: 17px;
+				color: var(--dt-primary);
+				margin-bottom: 4px;
+			}
+			.addr-main {
+				@include fw-5(14px);
+				line-height: 21px;
+				color: var(--dt-gray16);
+				margin-bottom: 2px;
+			}
+			.addr-detail {
+				@include fw-5(12px);
+				line-height: 18px;
+				color: var(--dt-gray11);
+			}
+			&.card.solid {
+				background-color: transparent;
+				border-bottom: unset;
+				padding: 72px 0;
+			}
+		}    
+	}
+}

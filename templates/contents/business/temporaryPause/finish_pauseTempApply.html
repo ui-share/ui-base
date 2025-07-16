@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- Set the viewport. -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+	<!-- Disable automatic phone number detection. -->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>완료_일시정지신청</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/temporaryPause.css">
+
+	<!-- Scripts -->
+</head>
+<body>
+	<div class="page-wrapper temporaryPause">
+		<!-- header -->
+		<header class="header">
+			<div class="header__util">
+				<button type="button" class="btn btn-util end"><span>처음</span></button>
+			</div>
+			<div class="header__btn btn-group">
+				<button type="button" class="btn btn-callEnd"><span class="icon"></span><span class="txt">종료</span></button>
+			</div>
+		</header>
+		<!-- //header -->
+	
+		<!-- container -->
+		<div class="container">
+			<div class="section__cont">
+				<div class="cont__wrap cont__wrap-service">
+					<div class="inform-wrap">
+						<span class="inform-img success"></span>
+						<div class="text-box">
+							<span class="tit">이용 중인 휴대폰이<br>
+								<span class="color-prim">일시정지 신청</span>되었어요
+							</span>
+						</div>
+					</div>
+
+					<!-- 데이터 노출되는 리스트 -->
+					<ul class="list-wrap">
+						<li class="list-box">
+							<span class="head">신청일</span>
+							<span class="tail"><span>24년 11월 20일</span></span>
+						</li> 
+						<li class="list-box">
+							<span class="head">일시정지 사유</span>
+							<span class="tail"><span>해외출장/여행(단기부재)</span></span>
+						</li> 
+						<!-- 남은 정지 횟수, 가능 일수 250227 삭제 -->
+					</ul>
+				</div>
+
+				<div class="cont__wrap cont__wrap-btBtn">
+					<div class="btn-group flex-row is-confirm">
+						<button class="btn" type="button">
+							<span class="txt">확인</span>
+						</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</body>
+</html>

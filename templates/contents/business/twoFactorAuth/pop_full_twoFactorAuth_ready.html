@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- Set the viewport. -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+	<!-- Disable automatic phone number detection. -->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>LGU+ 보이는 ARS</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/style.css">
+
+	<!-- Scripts -->
+</head>
+<body>
+	<div class="page-wrapper full-popup">
+		<!-- header -->
+		<header class="header">
+			<div class="header__util">
+				<button type="button" class="btn btn-util prev"><span>이전</span></button>
+			</div>
+			<div class="header__btn">
+				<button type="button" class="btn btn-callEnd"><span class="icon"></span><span class="txt">종료</span></button>
+			</div>
+		</header>
+		<!-- //header -->
+		
+		<div class="container">
+			<div class="section__cont twoFactorAuth">
+				<!-- 메시지 영역 -->
+				<div class="cont__wrap cont__wrap-message">
+					<div class="cont__txt-box">
+						<h4 class="txt">
+							휴대폰으로 전송된<br><span class="color-prim">푸시 메시지</span>를 누른 뒤<br>인증을 진행해 주세요
+						</h4>
+						<ul class="bullet-list info">
+							<span class="bullet-item">
+								푸시 메시지가 보이지 않으면 화면 상단의<br>상단바를 아래로 내려 알림 내역을 확인해 주세요
+							</span>
+						</ul>
+					</div>
+				</div>
+
+				<div class="cont__wrap cont__wrap-vertical">
+					<div class="input-control">				
+						<div class="input-group">
+							<label class="input-label">생년월일</label>
+							<div class="input-row">
+								<input type="text" class="input-field" value="2001.01.01" autocomplete='off' readonly/>
+							</div>
+						</div>
+					</div>
+
+					<div class="input-control">				
+						<div class="input-group">
+							<label class="input-label">휴대폰 번호</label>
+							<div class="input-row">
+								<input type="text" class="input-field" value="010-1234-5678" autocomplete='off' readonly/>
+							</div>
+						</div>
+					</div>
+
+					<div class="input-control">				
+						<div class="input-group">
+							<label class="input-label">이름</label>
+							<div class="input-row">
+								<input type="text" class="input-field" value="김유플" autocomplete='off' readonly/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cont__wrap cont__wrap-btBtn">
+					<div class="btn-group flex-column">
+						<div class="auth-status ready">
+							<p class="txt">인증이 완료되면<br>아래 버튼을 눌러주세요</p>
+						</div>
+						<button class="btn btn-prim" type="button">
+							<span class="txt">인증 완료</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

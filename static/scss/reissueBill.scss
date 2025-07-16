@@ -1,0 +1,11 @@
+@import "../scss/base/mixin";
+.reissueBill {
+    .container {
+        .section__cont {
+            padding: 72px 0 155px;
+            &.finish {
+                padding-top: 92px;
+            }
+        }
+    }
+}

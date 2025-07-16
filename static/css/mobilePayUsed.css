@@ -1,0 +1,71 @@
+.mobilePayUsed .cont__wrap.cont__wrap-segment .list-payment {
+	padding: 0 20px;
+	margin-top: 24px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .list-payment > .card.solid:nth-last-child(1) {
+	margin-top: 4px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .list-payment + .btn-group {
+	padding: 16px 20px 0;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .btn-box {
+	padding-top: 8px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .btn-box .chips-group {
+	flex-wrap: nowrap;
+	gap: 4px;
+	padding-left: 20px;
+	padding-bottom: 6px;
+	overflow-x: auto;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .btn-box .chips-group .chips:last-child {
+	margin-right: 20px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .btn-box .btn.appStore {
+	width: calc(100% - 40px);
+	margin: 16px auto 0;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed {
+	gap: 12px;
+	padding: 20px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .used-date {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	color: var(--dt-gray11);
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .card-body .used-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .card-body .used-info .used-name {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 150%;
+	color: var(--dt-gray14);
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .card-body .used-info .used-won {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	color: var(--dt-black);
+	text-align: right;
+	flex: 1;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .card-body .used-info .flag .txt {
+	line-height: 140%;
+	letter-spacing: -0.5px;
+}
+.mobilePayUsed .cont__wrap.cont__wrap-segment .card.payUsed .card-body .used-info .txt-sub {
+	font-size: 14px;
+	line-height: 150%;
+	margin-top: 0;
+}

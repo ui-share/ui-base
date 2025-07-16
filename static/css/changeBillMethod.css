@@ -1,0 +1,197 @@
+@charset "UTF-8";
+.changeBillMethod .container .section__cont.segment {
+	padding: 36px 0 48px;
+	gap: 0;
+}
+.changeBillMethod .container .section__cont.desc {
+	padding: 36px 0 48px 0;
+}
+.changeBillMethod .container .section__cont.desc:has(.accnt-cont-wrap) {
+	height: calc(100% - 262px);
+}
+.changeBillMethod .container .section__cont.counsel {
+	padding: 36px 0 0px;
+}
+.changeBillMethod .container .section__cont:has(.addr-wrap) {
+	height: 100vh;
+}
+.changeBillMethod .container .section__cont:has(.addr-wrap) .cont__wrap-service {
+	height: 100%;
+}
+.changeBillMethod .container .section__cont:has(.addr-wrap) .cont__wrap-service .cont__txt-box .txt {
+	line-height: 150%;
+}
+
+.changeBillMethod .cont__wrap .con__tit-box .tit-head {
+	flex-wrap: wrap;
+}
+.changeBillMethod .cont__wrap .con__tit-box .tit-head .txt-title {
+	line-height: 22px;
+}
+.changeBillMethod .cont__wrap .con__tit-box .tit-head .color-prim {
+	font-size: 18px;
+	font-weight: 700;
+}
+.changeBillMethod .cont__wrap .con__tit-box .tit-tail {
+	min-width: max-content;
+}
+.changeBillMethod .cont__wrap .con__tit-box:not(:has(.tit-tail)):has(.bullet-list) {
+	flex-direction: column;
+	row-gap: 6px;
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt {
+	line-height: 1.5;
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	padding-right: 35%;
+	row-gap: 4px;
+	color: var(--dt-gray16);
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price .deco {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-right: 2px;
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price .deco-sub {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-right: 2px;
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price .color-prim {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price:has(.deco), .changeBillMethod .cont__wrap .cont__txt-box .txt.price:has(.color-prim) {
+	color: var(--dt-gray14);
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price:has(.deco + .color-prim) {
+	color: var(--dt-gray14);
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price:has(.deco + .color-prim) .color-prim {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.changeBillMethod .cont__wrap .cont__txt-box .txt.price .txt-sub {
+	width: 100%;
+	font-size: 16px;
+	color: var(--dt-black);
+}
+.changeBillMethod .cont__wrap.cont__wrap-vertical.wd-full {
+	row-gap: 0;
+}
+.changeBillMethod .cont__wrap.cont__wrap-vertical.wd-full:has(.card-group.bank) {
+	height: 100%;
+}
+.changeBillMethod .cont__wrap.cont__wrap-vertical.wd-full > div {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.changeBillMethod .cont__wrap.cont__wrap-vertical.wd-full .con__tit-box {
+	padding-bottom: 16px;
+}
+.changeBillMethod .cont__wrap.cont__wrap-vertical.wd-full .card-group.bank {
+	margin-bottom: 16px;
+}
+.changeBillMethod .cont__wrap.cont__wrap-vertical.wd-full .accnt-cont-wrap {
+	min-height: 120px;
+	overflow-y: auto;
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn {
+	/* 히스토리 확인 후 삭제 예정
+		// pointer-events:auto;
+		// opacity:1;
+		// transition:opacity 0.2s ease-in-out;
+	*/
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn.is-scrolled {
+	opacity: 0;
+	pointer-events: none;
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn .btn-scroll {
+	margin: 0 auto;
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn .btn-group {
+	position: relative;
+	background-color: var(--dt-white);
+	padding: 0 20px 20px;
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn .btn-group::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(0deg, #FFF 17.5%, rgba(255, 255, 255, 0) 100%);
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn .btn-group.full {
+	padding: 0;
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn .btn-group.full .btn {
+	border-radius: 0;
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn .btn.bg-bank {
+	width: calc(100% - 40px);
+	margin: 0 auto 20px;
+	background-color: var(--dt-gray01);
+	border: 1px solid var(--dt-gray08);
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn:has(.accordion-container:first-child) {
+	box-shadow: 0px -8px 13px rgba(0, 0, 0, 0.04);
+}
+.changeBillMethod .cont__wrap.cont__wrap-btBtn:has(.accordion-container:first-child) .accordion-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+}
+.changeBillMethod .changeBillMethod .input-col-wrap {
+	row-gap: 8px;
+}
+.changeBillMethod .addr-wrap {
+	max-height: calc(100vh - 260px);
+	overflow-y: auto;
+}
+.changeBillMethod .addr-wrap .addr-box {
+	padding: 16px 0 17px;
+	border-bottom: 1px solid var(--dt-gray17);
+}
+.changeBillMethod .addr-wrap .addr-box[role=button]:active {
+	box-shadow: inset 0px 0px 0px 100px rgba(0, 0, 0, 0.12);
+}
+.changeBillMethod .addr-wrap .addr-box .zip-code {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 17px;
+	color: var(--dt-primary);
+	margin-bottom: 4px;
+}
+.changeBillMethod .addr-wrap .addr-box .addr-main {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	color: var(--dt-gray16);
+	margin-bottom: 2px;
+}
+.changeBillMethod .addr-wrap .addr-box .addr-detail {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+	color: var(--dt-gray11);
+}
+.changeBillMethod .addr-wrap .addr-box.card.solid {
+	background-color: transparent;
+	border-bottom: unset;
+	padding: 72px 0;
+}

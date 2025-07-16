@@ -1,0 +1,28 @@
+.page-wrapper.callQuality .container .section__cont {
+	padding: 72px 0 155px;
+}
+
+.callQuality .inform-wrap .text-box .tit {
+	font-size: 22px;
+}
+.callQuality .inform-wrap .text-box .tit .color-prim {
+	font-size: 22px;
+}
+.callQuality .inform-wrap .text-box .txt {
+	font-size: 14px;
+}
+.callQuality .card {
+	padding: 24px;
+}
+.callQuality .card .card-body {
+	gap: 20px;
+}
+.callQuality .card .img-box {
+	width: unset;
+	min-width: none;
+	height: unset;
+}
+.callQuality .card .tit {
+	font-size: 14px;
+	font-weight: 500;
+}

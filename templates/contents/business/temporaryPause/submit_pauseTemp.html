@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- Set the viewport. -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+	<!-- Disable automatic phone number detection. -->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>LGU+ 보이는 ARS</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/temporaryPause.css">
+	
+	<!-- Scripts -->
+</head>
+<body>
+	<div class="page-wrapper temporaryPause">
+		<!-- header -->
+		<header class="header">
+			<div class="header__util">
+				<button type="button" class="btn btn-util end"><span>처음</span></button>
+			</div>
+			<div class="header__btn btn-group">
+				<button type="button" class="btn btn-callEnd"><span class="icon"></span><span class="txt">종료</span></button>
+			</div>
+		</header>
+		<!-- //header -->
+	
+		<!-- container -->
+		<div class="container">
+			<div class="section__cont">
+				<div class="cont__wrap cont__wrap-service">
+					<div class="cont__txt-box">
+						<h4 class="txt">
+							일시정지 신청 정보를 선택해 주세요
+						</h4>
+					</div>
+				</div>
+				<div class="cont__wrap pauseTemp">
+					<!-- 
+						[[ 입력 상태 별 class ]] : input-control에 클래스를 추가하여 모든 상태를 제어
+							** 포커스 : focused 
+							** 유효성 검사 성공 : success
+							** 유효성 검사 에러 : error
+							** 읽기 전용 : disabled
+							** 비활성 : disabled
+							기본 : <div class="input-control">
+							포커스 : <div class="input-control focused">
+							비활성, 읽기 전용 : <div class="input-control disabled">
+							유효성 검사 성공 : <div class="input-control success">
+							유효성 검사 에러 : <div class="input-control error">
+					-->
+					<!-- 일시정지 사유 선택 -->
+					<div class="input-control">
+						<div class="input-group">
+							<label class="input-label">일시정지 사유</label>
+							<div class="input-row">
+								<button type="button" class="btn-field-dropdown">
+									<!-- placeholder성 안내 문구 노출 -->
+									<!-- <span class="txt">일시정지 사유 선택</span> -->
+									<!-- 값 출력 시 : done -->
+									<span class="txt done">인터넷미사용</span>
+								</button>
+							</div>
+						</div>
+						<!-- <div class="validation-txt">validation 메시지 필요시 노출</div> -->
+					</div>
+
+					<div class="slct-control">
+						<div class="slct-label-box">
+							<span class="label-tit">일시정지 기간</span><span class="label-desc">남은 가능 일수 <span>180</span>일</span>
+						</div>
+						<div class="slct-box-wrap">
+							<!-- // 드롭다운 박스
+							[[입력 값 클래스]]
+							드롭다운 선택 후 입력 값 : slct-box에 done 클래스 추가 및 텍스트 변경  <button type="button" class="slct-box done">
+							[[ 상태 class ]]
+								** 포커스 : focused
+								** 에러 : error
+								** 비활성 : disabled
+							- 멀티 제어 (드롭다운 여러개 동시 제어 필요 시) : slct-control에 클래스를 추가
+								** 포커스 : <div class="slct-control focused">
+								** 에러 : <div class="slct-control error">
+								** 비활성 : <div class="slct-control disabled">
+							- 싱글 제어 (드롭다운 각각 제어 필요 시) : slct-box(버튼)에 클래스를 추가
+								** 포커스 : <button type="button" class="slct-box focused">
+								** 에러 : <button type="button" class="slct-box error">
+								** 비활성 : <button type="button" class="slct-box disabled">
+							-->
+							<button type="button" class="slct-box  done">
+								<span class="txt"><span>25년</span><span>12월</span><span>24일</span></span>
+								<span class="arrow"></span>
+							</button>
+							<span class="multi-box">
+								<span class="hyphen"> ~ </span>
+								<button type="button" class="slct-box">
+									<span class="txt"><span>종료일 선택</span></span>
+									<span class="arrow"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+
+					<div class="info-wrap">
+						<span class="txt-tit">모바일 수신 금지 설정</span>
+						<!-- ON/OFF 상태
+							ON 상태 : 
+							<input type="checkbox" id="switch1" class="switch-input" checked>
+							<label for="switch1" class="switch-label">
+								<span>ON 상태 문구</span>
+								<span class="switch-box"></span>
+							</label>						
+
+							OFF 상태 :
+							<input type="checkbox" id="switch1" class="switch-input" checked>
+							<label for="switch1" class="switch-label">
+								<span>OFF 상태 문구</span>
+								<span class="switch-box"></span>
+							</label>
+						-->
+						<div class="switch-group">
+							<input type="checkbox" id="switch1" class="switch-input" checked>
+							<label for="switch1" class="switch-label">
+								<span>사용</span>
+								<!-- <span>사용안함</span> -->
+								<span class="switch-box"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="cont__wrap mt-16">
+					<ul class="bullet-list info">
+						<li class="bullet-item">
+							일시정지 신청 후 최초 30일은 받는 통화와 음성사서함 서비스 이용이 가능합니다. 수신자 부담 전화를 이용하면 요금이 부과될 수 있습니다.
+						</li>
+					</ul>
+				</div>
+				<div class="cont__wrap cont__wrap-btBtn">
+					<div class="btn-group flex-row is-confirm">
+						<button class="btn btn-prim is-disabled" type="button">
+							<span class="txt">일시정지 신청</span>
+						</button>
+						<!-- 
+							## 버튼 상태 class 
+							버튼 활성 : <button class="btn btn-prim" type="button"> 
+							버튼 비활성 is-disabled : <button class="btn btn-prim is-disabled" type="button">  
+						-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</body>
+</html>

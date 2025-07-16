@@ -1,0 +1,133 @@
+.mobilePayPrepayment .section__cont.flex-row {
+	align-items: unset;
+	gap: 44px;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .col {
+	row-gap: 10px;
+	padding-top: 4px;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .col > .txt-title {
+	padding-bottom: 10px;
+	line-height: 120%;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .col .row .txt-title, .mobilePayPrepayment .info-col-wrap:has(.info-price) .col .row .txt-desc {
+	color: var(--dt-gray14);
+	font-size: 14px;
+	font-weight: 500;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .col + .info-price.total-last {
+	margin-top: 8px;
+	padding-top: 20px;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .col + .info-price.total-last .txt-price {
+	line-height: 120%;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .col + .info-price.total-last:after {
+	bottom: unset;
+	top: 0;
+	width: 100%;
+}
+.mobilePayPrepayment .info-col-wrap:has(.info-price) .btn-group {
+	margin-top: 8px;
+}
+.mobilePayPrepayment .info-col-wrap .col {
+	row-gap: 16px;
+}
+.mobilePayPrepayment .info-col-wrap .txt-title {
+	color: var(--dt-gray16);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.mobilePayPrepayment .info-col-wrap .btn-group {
+	margin-top: 20px;
+}
+.mobilePayPrepayment .info-col-wrap .btn-group .btn {
+	background-color: var(--dt-gray06);
+	border: 1px solid var(--dt-gray06);
+}
+.mobilePayPrepayment .info-col-wrap .btn-group .btn .txt {
+	color: var(--dt-gray11);
+	font-size: 14px;
+}
+.mobilePayPrepayment .plan-wrap.line {
+	margin-top: 4px;
+}
+.mobilePayPrepayment .plan-wrap.line .list-plan {
+	padding-top: 20px;
+}
+.mobilePayPrepayment .plan-wrap.line .list-plan .txt-title {
+	color: var(--dt-gray16);
+}
+.mobilePayPrepayment .plan-wrap.line .list-plan .txt-price {
+	text-align: right;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+}
+.mobilePayPrepayment .plan-wrap.line .txt-sub .img-box {
+	width: 24px;
+	height: 24px;
+}
+.mobilePayPrepayment .plan-wrap.line .txt-sub .img-box img {
+	width: 18px;
+	transform: translateY(-1px);
+}
+.mobilePayPrepayment .input-control.error input:valid {
+	color: var(--dt-error);
+}
+.mobilePayPrepayment .input-control.error .input-row {
+	border-color: var(--dt-error);
+}
+.mobilePayPrepayment .list-payment {
+	margin-top: 20px;
+}
+.mobilePayPrepayment .list-payment .card.solid {
+	row-gap: 8px;
+	padding: 18px 24px 22px;
+}
+.mobilePayPrepayment .list-payment .card.solid .row {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+.mobilePayPrepayment .list-payment .card.solid .row.detail .txt-title {
+	color: var(--dt-gray11);
+}
+.mobilePayPrepayment .list-payment .card.solid .txt-title {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--dt-gray16);
+}
+.mobilePayPrepayment .list-payment .card.solid .txt-date {
+	color: var(--dt-gray11);
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 150%;
+	padding-bottom: 4px;
+}
+.mobilePayPrepayment .list-payment .card.solid .txt-desc {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 2px;
+	margin-left: auto;
+	color: var(--dt-gray16);
+	font-size: 14px;
+	font-weight: 500;
+}
+.mobilePayPrepayment .list-payment .card.solid .txt-desc .img-box {
+	width: 16px;
+	min-width: 16px;
+	height: 16px;
+}
+.mobilePayPrepayment .list-payment .card.solid .color-prim {
+	font-weight: 600;
+}
+.mobilePayPrepayment .segment__wrap {
+	margin-top: 10px;
+}
+.mobilePayPrepayment .segment-content .list-payment {
+	margin-top: 2px;
+}

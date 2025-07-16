@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- Set the viewport. -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+	<!-- Disable automatic phone number detection. -->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>LGU+ 보이는 ARS</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../../../static/css/roamingUsed.css">
+
+	<!-- Scripts -->
+</head>
+<body>
+	<div class="page-wrapper roamingUsed">
+		<!-- header -->
+		<header class="header">
+			<div class="header__util">
+				<button type="button" class="btn btn-util prev"><span>이전</span></button>
+			</div>
+			<div class="header__btn btn-group">
+				<button type="button" class="btn btn-callEnd"><span class="icon"></span><span class="txt">종료</span></button>
+			</div>
+		</header>
+		<!-- //header -->
+	
+		<!-- container -->
+		<div class="container">
+			<div class="section__cont summary">
+				<div class="cont__wrap cont__wrap-roamingUsed">
+					<div class="select-billdate"></div>
+					<div class="cont__txt-box">
+						<span class="txt price">
+							<span class="txt"><span class="color-prim">로밍 이용내역</span>을<br>확인해 보세요</span>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="section__cont desc noUsed">
+				<div class="cont__wrap cont__wrap-vertical">
+					<div class="caption-wrap">
+						<p class="caption">90일 전까지 조회됩니다</p>
+					</div>
+
+					<!-- 이용내역 리스트 : card 반복 -->
+					<!-- 이용 예정 예시 -->
+					<div class="card solid rmPeriod">
+						<div class="card-header" role="button">
+							<div class="item text">
+								<div class="flag flag-line primary">
+									<span class="txt">이용예정</span>
+								</div>
+								<span class="tit">D-23일</span>
+							</div>
+							<span class="img-box">
+								<img src="../../../../static/images/icon/ic-chevron_right_small_line.svg">
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="period-wrap">
+								<div class="item date">
+									<span class="tit">10월 2일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+								<div class="item period">
+									<div class="chips chips-tag">
+										<span class="txt">30일</span>
+									</div>
+								</div>
+								<div class="item date">
+									<span class="tit">11월 1일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+							</div>
+
+							<ul class="list-wrap">
+								<li class="list-box">
+									<span class="head">요금제</span>
+									<span class="tail">로밍패스 7GB</span>
+								</li> 
+								<li class="list-box">
+									<span class="head">방문국가</span>
+									<span class="tail">스페인, 이탈리아, 그리스</span>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer hidden">
+							<div class="btn-group">
+								<button class="btn btn-md" type="button">
+									<span class="txt">영수증 발급</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 이용중 예시 -->
+					<div class="card solid rmPeriod">
+						<div class="card-header" role="button">
+							<div class="item text">
+								<div class="flag primary">
+									<span class="txt">이용중</span>
+								</div>
+								<span class="tit"></span>
+							</div>
+							<span class="img-box">
+								<img src="../../../../static/images/icon/ic-chevron_right_small_line.svg">
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="period-wrap">
+								<div class="item date">
+									<span class="tit">10월 2일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+								<div class="item period">
+									<div class="chips chips-tag">
+										<span class="txt">30일</span>
+									</div>
+								</div>
+								<div class="item date">
+									<span class="tit">11월 1일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+							</div>
+
+							<ul class="list-wrap">
+								<li class="list-box">
+									<span class="head">요금제</span>
+									<span class="tail">로밍패스 7GB</span>
+								</li> 
+								<li class="list-box">
+									<span class="head">방문국가</span>
+									<span class="tail">스페인, 이탈리아, 그리스</span>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer hidden">
+							<div class="btn-group">
+								<button class="btn btn-md" type="button">
+									<span class="txt">영수증 발급</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 이용 완료 : 청구 전 예시 -->
+					<div class="card solid rmPeriod">
+						<div class="card-header" role="button">
+							<div class="item text">
+								<div class="flag">
+									<span class="txt">이용완료</span>
+								</div>
+								<span class="tit"></span>
+							</div>
+							<span class="img-box">
+								<img src="../../../../static/images/icon/ic-chevron_right_small_line.svg">
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="period-wrap">
+								<div class="item date">
+									<span class="tit">8월 21일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+								<div class="item period">
+									<div class="chips chips-tag">
+										<span class="txt">7일</span>
+									</div>
+								</div>
+								<div class="item date">
+									<span class="tit">8월 28일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+							</div>
+
+							<ul class="list-wrap">
+								<li class="list-box">
+									<span class="head">요금제</span>
+									<span class="tail">로밍패스 7GB</span>
+								</li> 
+								<li class="list-box">
+									<span class="head">방문국가</span>
+									<span class="tail">일본</span>
+								</li> 
+								<li class="list-box">
+									<span class="head">로밍요금</span>
+									<span class="tail total">
+										<span class="price">총 44,623원</span>
+										<span class="info">9월 납부예정</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer">
+							<div class="btn-group">
+								<button class="btn btn-md" type="button">
+									<span class="txt">영수증 발급</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 이용 완료 : 납부완료 예시 -->
+					<div class="card solid rmPeriod">
+						<div class="card-header" role="button">
+							<div class="item text">
+								<div class="flag">
+									<span class="txt">이용완료</span>
+								</div>
+								<span class="tit"></span>
+							</div>
+							<span class="img-box">
+								<img src="../../../../static/images/icon/ic-chevron_right_small_line.svg">
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="period-wrap">
+								<div class="item date">
+									<span class="tit">3월 21일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+								<div class="item period">
+									<div class="chips chips-tag">
+										<span class="txt">3일</span>
+									</div>
+								</div>
+								<div class="item date">
+									<span class="tit">3월 24일 (수)</span>
+									<span class="txt">9:00</span>
+								</div>
+							</div>
+
+							<ul class="list-wrap">
+								<li class="list-box">
+									<span class="head">요금제</span>
+									<span class="tail">로밍패스 7GB</span>
+								</li> 
+								<li class="list-box">
+									<span class="head">방문국가</span>
+									<span class="tail">싱가포르</span>
+								</li> 
+								<li class="list-box">
+									<span class="head">로밍요금</span>
+									<span class="tail total">
+										<span class="price">총 23,060원</span>
+										<span class="info">4월 납부완료</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="card-footer">
+							<div class="btn-group">
+								<button class="btn btn-md" type="button">
+									<span class="txt">영수증 발급</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<button type="button" class="btn btn-sec">
+							<span class="txt">전체 보기</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 디바이더 영역 -->
+			<div class="section__divider"></div>
+			<!-- 상담 영역 -->
+			<div class="section__cont counsel">
+				<div class="cont__wrap">
+					<div class="con__tit-box">
+						<h6 class="tit-head">
+							<span class="txt-title">아래 메뉴도 추천해요</span>
+						</h6>
+						<div class="tit-tail hidden"></div>
+					</div>
+					<div class="card-group">
+						<div class="card" role="button" tabindex="0">
+							<div class="card-body">
+								<div class="item util">
+									<span class="img-box">
+										<img src="../../../../static/images/icon/ic-menu/ic-roamingApply.svg" alt="로밍 신청" />
+									</span>
+								</div>
+								<div class="item text">
+									<span class="tit">로밍 신청</span>
+								</div>
+							</div>
+						</div>
+						<div class="card" role="button" tabindex="0">
+							<div class="card-body">
+								<div class="item util">
+									<span class="img-box">
+										<img src="../../../../static/images/icon/ic-menu/ic-roamingAdditional.svg" alt="로밍 부가서비스" />
+									</span>
+								</div>
+								<div class="item text">
+									<span class="tit">로밍 부가서비스</span>
+									<span class="txt">조회ㆍ신청ㆍ해지</span>
+								</div>
+							</div>
+						</div>
+						<div class="card" role="button" tabindex="0">
+							<div class="card-body">
+								<div class="item util">
+									<span class="img-box">
+										<img src="../../../../static/images/icon/ic-menu/ic-roamingRealtime.svg" alt="로밍 실시간 조회">
+									</span>
+								</div>
+								<div class="item text">
+									<span class="tit">로밍 실시간 조회</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 
+					아코디언 닫힘 상태(기본) > 오픈시 : open 클래스 추가 
+					<div class="cont__wrap cont__wrap-counsel accordion-container open">
+				-->
+				<div class="cont__wrap cont__wrap-counsel accordion-container">
+					<div class="con__tit-box accordion-header" role="button" tabindex="0">
+						<span class="txt-sub">문의사항을 찾기 어려우신가요?</span>
+						<h6 class="tit-head">
+							<span class="txt-title">다른 상담채널을 이용해 보세요</span>
+						</h6>
+						<div class="tit-tail">
+							<span class="img-box ico-toggle">
+								<img src="../../../../static/images/icon/ic-councel-down.svg" alt="">
+							</span>
+						</div>
+					</div>
+					<div class="card-group threeby accordion-content">
+						<div class="card detail" role="button" tabindex="0">
+							<div class="card-body">
+								<div class="item util">
+									<span class="img-box">
+										<img src="../../../../static/images/icon/ic-card-chatbot2.svg" alt="챗봇 상담">
+									</span>
+								</div>
+								<div class="item text">
+									<span class="tit">챗봇 상담</span>
+									<span class="txt">대기없이 바로</span>
+								</div>
+							</div>
+						</div>
+						<div class="card detail" role="button" tabindex="0">
+							<div class="card-body">
+								<div class="item util">
+									<span class="img-box">
+										<img src="../../../../static/images/icon/ic-card-ars-ai.svg" alt="AI 상담">
+									</span>
+								</div>
+								<div class="item text">
+									<span class="tit">AI 상담</span>
+									<span class="txt">언제든지 빠른</span>
+								</div>
+							</div>
+						</div>
+						<div class="card detail" role="button" tabindex="0">
+							<div class="card-body">
+								<div class="item util">
+									<span class="img-box">
+										<img src="../../../../static/images/icon/ic-card-calls.svg" alt="전화 상담">
+									</span>
+								</div>
+								<div class="item text">
+									<span class="tit">전화 상담</span>
+									<span class="txt">상세하고 친절한</span>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="chips chips-tag hidden">
+									<span class="txt">점심시간</span>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+</body>
+</html>
